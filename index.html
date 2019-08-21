@@ -1,0 +1,102 @@
+<!-- DOCTYPE -->
+<!DOCTYPE html>
+
+<!-- html -->
+<html>
+
+<!-- head element -->
+<head>
+    <title>Resource Table Site</title>
+    <!-- metadata -->
+    <meta name="author" content=" Kory Stone">
+    <meta name="description" content="This is a site that we use to list resources for web development.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial=scale1.0">
+
+    <!-- This is how you link your stylesheet to index.html -->
+    <link rel="stylesheet" href="main.css">
+
+    <!-- Everything inside the style element is applied to the element that is inside of it-->
+    <style>
+        body {
+            background-color: lightgray;
+        }
+        
+        h1 {
+            font-size: 24pt;
+        }
+    </style>
+</head>
+
+<!-- body element -->
+
+<body>
+    <!-- Header text for our site -->
+    <!-- The style attribute below is an example of an inline style -->
+    <!-- Inline styles are when we are styling the element within the tag for the element -->
+    <h1 style="color:green;">My Web Development Resources</h1>
+
+    <!-- This is an anchor tag, which is used to link stuff -->
+    <!-- The href attribute is the URL that the anchor tag navigates to-->
+    <!-- The target attribute determines how the link is opened by our browser (_blank opens a new tab) -->
+    <!-- <a href="https://www.google.com" target="_blank">Google</a> -->
+
+
+    <!-- This is the container for an HTML table -->
+    <table>
+        <!-- Tables in HTML consist of multiple rows and columns. Each row will have data that will be stored in each column. -->
+        <!-- Tables can also have headers for the comlumns that we can display -->
+
+        <!-- Each row for our table is a tr(table row) element-->
+        <tr>
+            <!-- th elements are a table header -->
+            <th>Resource</th>
+            <th>Description</th>
+            <th>Link</th>
+        </tr>
+
+        <tr>
+            <!-- td elements are table data -->
+            <td>W3Schools</td>
+            <td>Web Development Tutorials and Documentation</td>
+            <td>
+                <a href="https://w3schools.com" target="_blank">Link</a>
+            </td>
+        </tr>
+
+        <tr>
+            <td>MDN Web Docs</td>
+            <td>Web Development Resources and Documentation</td>
+            <td>
+                <a href="https://developer.mozilla.org/en-US/" target="" _blank>Link</a>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Stack Overflow</td>
+            <td>The Ultimate Place for Coding Question Answers</td>
+            <td>
+                <a href="https://stackoverflow.com" target="_blank">Link</a>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Chrome Dev Tools</td>
+            <td>How to Use The Chrome Debugging Tools</td>
+            <td>
+                <a href="https://developers.google.com/web/tools/chrome-devtools/?utm_source=dcc&utm_medium=redirect&utm_campaign=2018Q2"
+                    target="_blank">Link</a>
+            </td>
+        </tr>
+
+        <tr>
+            <td>VSCode Shortcut</td>
+            <td>Keyboard Shortcuts</td>
+            <td>
+                <a href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf" target="_blank">Link</a>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
